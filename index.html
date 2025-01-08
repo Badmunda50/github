@@ -3,37 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bot Hosting</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Bot Hosting</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Bot Hosting</h1>
+        <h1>Welcome to Bot Hosting</h1>
     </header>
     <main>
-        <section class="intro">
-            <p>This is a bot that automates tasks and makes your work easier. Follow the instructions below to get started!</p>
-        </section>
-        <section class="features">
-            <h2>Features</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <h2>Upload Your Bot</h2>
+            <input type="file" name="bot_file" accept=".py" required>
+            <button type="submit">Host Bot</button>
+        </form>
+        <section>
+            <h3>Hosted Bots</h3>
             <ul>
-                <li>Task automation</li>
-                <li>Customizable commands</li>
-                <li>Fast and reliable performance</li>
+                <li>Bot 1: Running</li>
+                <li>Bot 2: Stopped</li>
             </ul>
         </section>
-        <section class="instructions">
-            <h2>How to Use</h2>
-            <ol>
-                <li>Clone the repository from GitHub.</li>
-                <li>Install dependencies using <code>pip install -r requirements.txt</code>.</li>
-                <li>Run the bot with <code>python bot.py</code>.</li>
-            </ol>
-        </section>
-        <a href="https://github.com/Badmunda50/MS" target="_blank" class="btn">View on GitHub</a>
     </main>
     <footer>
-        <p>Created by [Your Name] | © 2025</p>
+        <p>© 2025 Bot Hosting Platform</p>
     </footer>
 </body>
 </html>
