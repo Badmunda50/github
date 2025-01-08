@@ -11,16 +11,16 @@
         <h1>Welcome to Bot Hosting</h1>
     </header>
     <main>
-        <form action="/upload" method="POST" enctype="multipart/form-data">
-            <h2>Upload Your Bot</h2>
-            <input type="file" name="bot_file" accept=".py" required>
+        <form action="/host" method="POST">
+            <h2>Host Your Bot from GitHub</h2>
+            <label for="repo_url">Enter GitHub Repository URL:</label>
+            <input type="url" name="repo_url" id="repo_url" placeholder="https://github.com/Badmunda50/code" required>
             <button type="submit">Host Bot</button>
         </form>
         <section>
             <h3>Hosted Bots</h3>
-            <ul>
-                <li>Bot 1: Running</li>
-                <li>Bot 2: Stopped</li>
+            <ul id="bot-list">
+                <!-- Dynamically populated with hosted bots -->
             </ul>
         </section>
     </main>
