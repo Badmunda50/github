@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request
 import os
 import subprocess
 import shutil
@@ -16,6 +16,10 @@ def index():
 
 @app.route('/host', methods=['POST'])
 def host_bot():
+    # Log for debugging
+    print("POST request received at /host")
+
+    # Get repo URL from the form
     repo_url = request.form.get('repo_url')
     if not repo_url:
         return "Error: No repository URL provided.", 400
