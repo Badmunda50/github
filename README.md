@@ -13,4 +13,4 @@ This is a simple hosting website for showcasing and documenting your bot.
 3. Enable GitHub Pages in your repository settings to host this website.
 
 ## Demo
-Visit the live website: [https://Badmunda50.github.io/sukh](https://Badmunda50.github.io/your-repository)
+Visit the live website: [https://badmunda50.github.io/github/](https://badmunda50.github.io/github/)
