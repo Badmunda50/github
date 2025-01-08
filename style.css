@@ -1,9 +1,11 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
     text-align: center;
-    background-color: #f9f9f9;
 }
 
 header {
@@ -12,8 +14,35 @@ header {
     padding: 20px 0;
 }
 
+header h1 {
+    margin: 0;
+}
+
 main {
-    margin: 20px;
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features ul li {
+    background-color: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.instructions ol {
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .btn {
@@ -24,11 +53,12 @@ main {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 footer {
-    margin-top: 30px;
-    padding: 10px 0;
     background-color: #333;
     color: white;
-    }
+    padding: 10px 0;
+    margin-top: 30px;
+}
